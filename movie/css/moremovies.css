@@ -1,0 +1,53 @@
+
+.movies{
+    /* background: #484848; */
+    cursor: pointer;
+    height: max-content;
+    position: relative;
+    background-color: #313131;
+    font-size: .6rem;
+    color: #fff;
+
+}
+.movies-poster{
+    width: 100%;
+    /* position: absolute; */
+}
+/* .movies-poster img{
+    object-fit: fill;
+
+} */
+
+/* .movies p{
+    font-size: 1.5rem;
+    color: aliceblue;
+} */
+img{
+    width: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+img:hover{
+    opacity: .3;
+
+}
+.popover{
+    display: none;
+    background: #313131;
+    color:#fff;
+}
+.movies-poster:hover ~ .popover{
+    position: absolute;
+    left:100%;
+    width: 100%;
+    display: inline-block;
+    transition: all .2s;
+
+}
+
+@media screen and (width<=940px) {
+    .movies{
+        /* font-size: .5rem; */
+    }
+}
