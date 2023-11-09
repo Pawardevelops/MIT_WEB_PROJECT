@@ -2,6 +2,7 @@ var popularMovieCards = document.getElementsByClassName("popularMovieCard")
 var popularListCompHolder = document.getElementById("popular_list");
 var genreListCompHolder =document.getElementById("genre_list");
 var ratingListCompHolder = document.getElementById("rating_list")
+var seeMore1 = document.getElementById("seemore1")
 var seeMore = document.getElementById("seemore")
 
 let options = {
@@ -92,7 +93,7 @@ function setPupularMovies(result){
         popularListCompHolder.innerHTML += `
         <li class="mx-1 popularMovieCard">
         <div class="card" >
-            <img src=${result.results?.banner} class="card-img-top text-center" alt="${result?.results?.imdb_id}">
+            <img src=${result?.results?.banner} class="card-img-top text-center" alt="${result?.results?.imdb_id}">
         </div>
     </li>`;
     // }
@@ -116,7 +117,7 @@ function setRatingMovies(result){
     genreListCompHolder.innerHTML += `
     <li class="mx-1 popularMovieCard">
     <div class="card" >
-        <img src=${result.results?.banner} class="card-img-top text-center" alt="${result?.results?.imdb_id}">
+        <img src=${result?.results?.banner} class="card-img-top text-center" alt="${result?.results?.imdb_id}">
     </div>
 </li>`;
 
@@ -126,6 +127,9 @@ for(let item of genreListCompHolder){
         window.location.assign("/pages/movie/movie.html?name="+e.target["alt"])
     })
 }
+seeMore1.addEventListener("click",()=>{
+    window.location.assign("/pages/more/moremovies.html?page=popularmovies");
+})
 }
 
 getMovieByRating();
@@ -146,11 +150,11 @@ function navigateToMovie(){
 
 
 
-for(var i=0;i<5;i++){
-    ratingListCompHolder.innerHTML += `<li class="mx-1">
-    <div class="card d-flex justify-content-center align-items-center px-1">
-        <p class="text-center ">${movieByRating[i]["title"]}</p>
-  </div>
-</li>`;
-}
-ratingListCompHolder.innerHTML += `<a href="#" class="text-white text-outline-none">see more...</a>`
+// for(var i=0;i<5;i++){
+//     ratingListCompHolder.innerHTML += `<li class="mx-1">
+//     <div class="card d-flex justify-content-center align-items-center px-1">
+//         <p class="text-center ">${movieByRating[i]["title"]}</p>
+//   </div>
+// </li>`;
+// }
+// ratingListCompHolder.innerHTML += `<a href="#" class="text-white text-outline-none">see more...</a>`

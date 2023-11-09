@@ -1,0 +1,197 @@
+*{
+    bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar start */
+
+nav a{
+  color: #fff !important;
+}
+a:hover{
+  color: blueviolet !important;
+}
+
+.navbar-toggler-icon{
+  background-image: url("/images/hamburger-menu-64.png");
+}
+/* navbar end */
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.bg-img{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+.bg-img img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: blur(1.5px);
+}
+
+#questions{
+    border: 5px solid rgb(124, 123, 123);
+}
+
+/* scollbar */
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #5e5e5e;
+    margin-block: .5rem;
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #97979781;
+    border-radius:.5rem ;
+}
+
+/* scrollbar */
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1rem;
+  }
+  .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+  }
+  .accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+  }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .accordion button[aria-expanded=true] {
+    color: #03b5d2;
+  }
+  .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all .5s ease;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+    text-align: center;
+}
+
+/* quick links starts here */
+.quick-links >li {
+    display: flex;
+    list-style: none;
+    margin-bottom: .5rem;
+    
+}
+.quick-links >li video{
+    height: 2rem;
+    margin-right: .5rem;
+}
+.quick-links >li a{
+    color: #2c2c2c;
+}
+.quick-links >li a:hover{
+    color: #757575;
+}
+
+/* quick links ends here */
+
+/* form strats here */
+.form-map{
+    margin-bottom: 5px;
+}
+
+
+.form-map iframe{
+    width: 100%;
+}
+
+/* form ends here */
+
+address{
+    font-size: .75em;
+    text-align: right;
+}
+
+
+
+@media screen and (width<=550px) {
+    body{
+        font-size: 10px;
+    }
+    .accordion-title{
+        font-size: 10px;
+    }
+}
+
+.text-with-shadow {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}

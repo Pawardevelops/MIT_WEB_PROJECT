@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,10 @@
     <link rel="stylesheet" href="/style.css">
     <title>DEKHflix</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-sm navbar bg-dark>
+    <nav class="navbar navbar-expand-sm navbar bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand " href="#">DEKHflix</a>
+            <a class="navbar-brand " href="/index.html">DEKHflix</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -22,15 +20,19 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" aria-current="page">Home <span
+                        <a class="nav-link" href="/index.html" aria-current="page">Home <span
                                 class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Movies</a>
+                        <a class="nav-link" href="/pages/movies/movies.html">Movies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">New&Popular</a>
+                        <a class="nav-link" href="/pages/aboutus/aboutus.html">About Us</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/help/help.html">Help</a>
+                    </li>
+                    
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
                     <input class="form-control me-sm-2" type="text" placeholder="Search">
@@ -39,7 +41,6 @@
             </div>
         </div>
     </nav>
-
     <section class="container-fluid p-0 m-0 header-section">
         <div class="top-black"></div>
         <div class="bottom-black"></div>
@@ -77,22 +78,17 @@
             </ul>
         </div>
         </section>
-
         <section class="container suggection popular-movies">
             <h2 class="text-white my-0 mb-2">Genre</h2>
-            <button id="seemore" class="seemore text-outline-none btn btn-outline-warning h-100">see more...</button>
+            <button id="seemore1" class="seemore text-outline-none btn btn-outline-warning h-100">see more...</button>
             <div class="d-flex text-center justify-content-start align-items-center">
             <ul id="genre_list" class="w-100 li d-flex justify-content-start align-items-center list-inline">
                 <!--js will add new elements here to make it kind of dynamic -->
             </ul>
             </div>
         </section>
-        <section class="container suggection rating-movies">
-            <h2 class="text-white my-0 mb-2">Rating</h2>
-
-            <ul id="rating_list" class="li d-flex justify-content-center align-items-center list-inline">
-                <!--js will add new elements here to make it kind of dynamic -->
-            </ul>
+        <section class="container d-flex justify-content-center align-items-center mb-3">
+           <a href="/pages/membership/membership.html" class="btn btn-outline-warning">Avail Membership</a>
         </section>
     </main>
     <footer class="container-fluid bg-dark">
@@ -115,7 +111,6 @@
             <hr class="text-white">
             <div class="other-services">
                 <h6 class="text-white">Useful Links</h2>
-
                 <div class="row w-100 text-center py-5">
                     <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Audio Description</a>
                     <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Help Center</a>
@@ -142,5 +137,4 @@
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

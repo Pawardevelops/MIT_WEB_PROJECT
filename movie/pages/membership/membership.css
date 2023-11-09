@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* navbar start */
+
+nav a{
+  color: #fff !important;
+}
+a:hover{
+  color: blueviolet !important;
+}
+
+.navbar-toggler-icon{
+  background-image: url("/images/hamburger-menu-64.png");
+}
+/* navbar end */
+
+.bdy{
+  background:  rgba(0,0,0);
+}
+
+
+/* navbar */
+
+nav a{
+  color: #fff !important;
+}
+a:hover{
+  color: blueviolet !important;
+}
+
+.navbar-toggler-icon{
+  background-image: url("/images/hamburger-menu-64.png");
+} 
+/* card plan */
+    .subscription-card {
+      border: 2px solid #f0f0f0;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      /*background: #e24646;*/ 
+      /* White background */
+    }
+
+    .subscription-card:hover {
+      transform: scale(1.05);
+    }
+
+    .subscription-card .card-header {
+      background-color: rgb(140, 42, 176);
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      text-align: center;
+    }
+
+    .subscription-card .card-header h3 {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+
+    .subscription-card .list-group-item {
+      background-color: transparent;
+      border: none;
+    }
+
+    .subscription-card .card-body {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .subscription-card .btn {
+  background: linear-gradient(to bottom, #007676, #004040);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  transition :background 0.3s;
+}
+
+.subscription-card .btn:hover {
+  background: linear-gradient(to bottom, #004040, #007676);
+}
+
+/* 
+    body {
+      background-color: #adb7bb;
+      color: #240a2c;
+    } */
+
+    .silver-card {
+      background: #EAF2F5; 
+    }
+
+    .super-card {
+      background: #EAF2F5; 
+    }
+
+    .premium-card {
+      background: #EAF2F5; 
+    }
+
+    /* Additional styling for icons */
+    .subscription-card .icon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .silver-icon {
+      color: #007676; /* Custom color for Basic icon */
+    }
+
+    .super-icon {
+      color: #FFD700; /* Custom color for Gold icon */
+    }
+
+    .premium-icon {
+  color: #C0C0C0; /* Custom color for Platinum icon */
+}
+

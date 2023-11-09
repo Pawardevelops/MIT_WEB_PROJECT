@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:  rgba(0,0,0);
+    font-family: 'Netflix Sans', sans-serif;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+/* navbar start */
+
+nav a{
+    color: #fff !important;
+}
+a:hover{
+    color: blueviolet !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url("/images/hamburger-menu-64.png");
+}
+/* navbar end */
+
+
+/* scollbar */
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #5e5e5e;
+    margin-block: .5rem;
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #97979781;
+    border-radius:.5rem ;
+}
+
+/* ::-webkit-scrollbar{
+    width: 7px;
+    background-color: #111;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #111;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+} */
+
+/* scrollbar */
+
+/* banner */
+
+#banner_title1{
+    margin-left: 55px;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+}
+
+#banner{
+    color: white;
+    object-fit: contain;
+    height: 528px;
+    background-position: center center;
+    background-size: cover;
+}
+
+#banner_contents{
+    margin-left: 70px;
+    padding-top: 100px;
+    height: 5px;
+}
+
+#banner_title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+#banner_description{
+    width: 45rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-size: .9rem;
+    max-width: 360px;
+    height: 80px;
+}
+
+#banner_button{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: .2vw;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: .5rem;
+    background-color: rgba(51, 51, 51, .5);
+    padding-bottom: .5rem;
+}
+
+#banner_button:hover{
+    color: black;
+    background-color: #e6e6e6;
+    transition: all .3s;
+}
+
+#banner_fadeBottom{
+    margin-top: 240px;
+    height: 7.4rem;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, .61),
+        #111
+    );
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* .row */
+
+.row{
+    margin-left: 20px;
+    color: white;
+}
+
+.row_poster{
+    object-fit: contain;
+    width: 100%;
+    max-height: 120px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_poster:hover{
+    transform: scale(1.08);
+}
+
+.row_posterLarger, .row_posterLarger1, .row_posterLarger2{
+    object-fit: contain;
+    width: 100%;
+    max-height: 250px;
+    margin-right: 10px;
+    transition: transform 500ms;
+
+}
+
+.row_posterLarger:hover, .row_posterLarger1:hover, .row_posterLarger2:hover{
+    transform: scale(1.09);
+    opacity: 1;
+    
+}
+
+/* suggection section ends */
+
+/* footer starts here */
+.context-socialmedia a img{
+    width: 2rem;
+}
+
+footer{
+    width: 100%;
+}
+.other-services .row a{
+    color:rgb(181, 181, 181);
+}
+/* footer ends here */
+
+@media  screen and (width<=940px) {
+    #popular_list{
+        height: 10rem;
+    }
+}
+@media screen and (width<555px) {
+    html{
+        font-size:15px;
+    }
+    
+    .seemore{
+        font-size: .5rem;
+    }
+}
+
+@media screen and (width<480px) {
+    html{
+        font-size:10px;
+    }
+    #banner_description{
+        display: none;
+    }
+    footer{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (width<390) {
+    html{
+        font-size:8px;
+    }
+}
+
+@media screen and (width<280) {
+    
+    #banner_title {
+        display: none;
+    }
+    
+}

@@ -61,7 +61,14 @@ img:hover{
     transition: all .2s;
 
 }
+.popover:hover{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    display: inline-block;
+    transition: all .2s;
 
+}
 @media screen and (width<=575px) {
     .movies{
        width: 70%;
