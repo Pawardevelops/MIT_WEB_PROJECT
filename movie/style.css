@@ -1,0 +1,205 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:  rgba(0,0,0);
+}
+
+
+
+a{
+    text-decoration: none;
+}
+/* navbar start */
+
+nav a{
+    color: #fff !important;
+}
+a:hover{
+    color: blueviolet !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url("/images/hamburger-menu-64.png");
+}
+/* navbar end */
+
+/* popular movie head section start  */
+.header-section{
+   width: 100%;
+   height: 80vh;
+    object-fit: contain;
+    position: relative;
+}
+.head-img{
+    object-fit: cover;
+    filter: blur(3px);
+    height: 80vh;
+}
+.top-black{
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    top: -5px;
+    background:linear-gradient(to top, transparent ,  rgba(41, 41, 41, 0.8)) ;
+    z-index: 3;
+}
+
+.bottom-black{
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    bottom: -5px;
+    background:linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.8)) ;
+    z-index: 3;
+}
+
+.head-details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    /* font-size: 2.5rem; */
+    color: #fff;
+    z-index: 4;
+}
+.head-title{
+    font-size: 2rem;
+}
+
+.btn-trailer{
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.btn-now{
+    font-size:1rem;
+    border-radius: 1rem;
+}
+
+/* popular movie head section end */
+
+
+/* scollbar */
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #5e5e5e;
+    margin-block: .5rem;
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #97979781;
+    border-radius:.5rem ;
+}
+
+/* scrollbar */
+
+/* genre or rating  */
+
+#genre_list{
+    height: 20rem;
+    scroll-snap-type: inline mandatory;
+}
+#genre_list > *{
+    scroll-snap-align: start;
+}
+#genre_list{
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* genre or rating  */
+
+/* popular movies subsection starts here */
+#popular_list{
+    height: 20rem;
+    scroll-snap-type: inline mandatory;
+
+}
+#popular_list > *{
+    scroll-snap-align: start;
+}
+.card{
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s;
+
+}
+#popular_list{
+    width: 100%;
+    overflow-y: auto;
+}
+.card-img-top{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.3);
+    z-index: 9;
+}
+@media screen and (width<940px) {
+    .card{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+
+/* popular movies subsection ends here */
+
+
+/* suggection section ends */
+
+/* footer starts here */
+.context-socialmedia a img{
+    width: 2rem;
+}
+
+.other-services .row a{
+    color:rgb(181, 181, 181);
+}
+/* footer ends here */
+
+@media  screen and (width<=940px) {
+    #popular_list{
+        height: 17rem;
+    }
+    .card{
+        width: 7rem;
+        height: 9rem;
+    }
+}
+@media screen and (width<555px) {
+    html{
+        font-size:15px;
+    }
+    
+    .seemore{
+        font-size: .5rem;
+    }
+}
+
+@media screen and (width<480px) {
+    html{
+        font-size:12px;
+    }
+    
+}
+
+@media screen and (width<390) {
+    html{
+        font-size:8px;
+    }
+    
+}

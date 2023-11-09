@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/movie.css">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Movie</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar bg-dark  ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">DEKHflix</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New&Popular</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section id="poster-section" class="container-fluid selected-movie d-flex justify-content-center align-items-center">
+        <div id="movie-poster" class="poster-section container row">
+            <!-- <div id="movie-poster" class="poster col-6 text-center"> -->
+                <!-- this component will be js generated
+                 <figure class="poster-img">
+
+                    <img  src="" alt="">
+                </figure> -->
+            <!-- </div> -->
+        </div>
+        <div class="playbtn bg-warning d-flex justify-content-center align-items-center text-white">
+            <span id="playbtn" class="text-center d-flex justify-content-center align-items-center ">
+            </span>
+        </div>
+    </section>
+    <section class="server mt-3 d-flex justify-content-center align-items-center">
+        <div class="container-fluid m-3 server-section rounded-3 row">
+            <div class="server-section-info bg-warning col-6 text-center d-flex justify-content-center align-items-center">
+                <p>If current server doesn't work please try other servers beside</p>
+            </div>
+            <div class="servers p-3 col-6  d-flex justify-content-evenly align-items-center flex-wrap gap-1">
+                <span title="Youtube" class="badge p-2 rounded-pill btn btn-warning">YT server</span>
+                <span title="New York" class="badge p-2 rounded-pill btn btn-outline-warning">NY server</span>
+                <span title="United Kingdom" class="badge p-2 rounded-pill btn btn-outline-warning">UK server</span>
+                <span title="India" class="badge p-2 rounded-pill btn btn-outline-warning">IND server</span>
+                <span title="Europe" class="badge p-2 rounded-pill btn btn-outline-warning">EU server</span>
+                <span title="Local" class="badge p-2 rounded-pill btn btn-outline-warning">Local server</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="movie-detail" class="text-white container-fluid movie-detail py-5 server-section ">
+        <div class="container movie-detail-text ">
+            <div class="container ">
+                <h2 id="movie-title">JJK seaon 3</h2>
+                <div>
+                    <span class=" badge-secondary">R</span>
+                    <span class="badge-secondary">HD</span>
+                    <span class="badge-secondary">CC</span>
+                    <span class="badge-secondary">mic</span>
+                    <span class="dot">.</span>
+                    <span class="" id="type">TV</span>
+                    <span class="dot">.</span>
+                    <span class="" id="movie-length">90 min</span>
+                </div>
+                <div class="info" id="Description">
+                    <!-- <p>
+                        The second season of Jujutsu Kaisen.
+                        The past comes to light when second-year
+                        students Satoru Gojou 
+                        and Suguru Getou are tasked with escorting young 
+                        Riko Amanai to Master Tengen.
+                    </p> -->
+                </div>
+                <hr>
+                <div class="text-white table-info row">
+                    <span class="col-6" id="movie-type">Type : TV</span>
+                    <span class="col-6" id="date-aired">Date aired : Jul 05,2023</span>
+                    <span class="col-6 wrap" id="genre">genre : Action,Drama,Fantasy,School,Super power</span>
+                    <span class="col-6" id="rating">Rating : 8.82</span>
+                    <span class="col-6" id="movie-duration">Duration : 23 min</span>
+                    <span class="col-6" id="content-rating">Content rating : R</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark">
+        <div class="container">
+            <div class="context-socialmedia pt-5 pb-4">
+                <h6 class="text-white pb-3">contact us at</h2>
+                <a href="https://github.com/Pawardevelops" target="_blank" title="github icon" class="me-3">
+                    <img src="/images/git.png" alt="github">
+                </a>
+                <a href="https://www.hackerrank.com/profile/sp20002511" target="_blank" title="hackerrank icon" class="me-3">
+                    <img src="/images/hackerrank.png" alt="hackerrank">
+                </a>
+                <a href="https://leetcode.com/pawarsach_n/"  target="_blank" title="leetcode icon" class="me-3">
+                    <img src="/images/leetcode.png" alt="leetcode">
+                </a>
+                <a href="https://www.linkedin.com/in/pawars/" target="_blank" title="linkedin icon" class="me-3">
+                    <img src="/images/linkedin.png" alt="linkedin">
+                </a>
+            </div>
+            <hr class="text-white">
+            <div class="other-services">
+                <h6 class="text-white">Useful Links</h2>
+
+                <div class="row w-100 text-center py-5">
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Audio Description</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Help Center</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Gift Card</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Media Center</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Investor Relations</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Jobs</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Terms of Use</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Privacy</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Legal Notices</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Cookies Preferences</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Corporate Information</a>
+                    <a href="#" class="col-6 col-sm-6 col-md-4 col-lg-3">Contact Us</a>
+                </div>
+            </div>
+            <hr class="text-white">
+            <div class="copyrights py-5">
+                <p class="text-white">Copyright &copy; 2023, All Right Reserved <a href="#">Sachin pawar</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="movie.js"></script>
+</body>
+</html>

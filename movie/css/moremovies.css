@@ -1,0 +1,69 @@
+
+.movies{
+    /* background: #484848; */
+    cursor: pointer;
+    height: max-content;
+    position: relative;
+    background-color: #313131;
+    font-size: .6rem;
+    color: #fff;
+    
+}
+.popular-movies{
+    -bs-gutter-x:0;
+    padding: 0;
+
+}
+.movies-poster{
+    width: 100%;
+    /* position: absolute; */
+}
+/* .movies-poster img{
+    object-fit: fill;
+
+} */
+
+/* .movies p{
+    font-size: 1.5rem;
+    color: aliceblue;
+} */
+img{
+    width: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+img:hover{
+    opacity: .3;
+
+}
+
+/* footer starts here */
+.context-socialmedia a img{
+    width: 2rem;
+    object-fit: contain;
+}
+
+.other-services .row a{
+    color:rgb(181, 181, 181);
+}
+/* footer ends here */
+.popover{
+    display: none;
+    background: #313131;
+    color:#fff;
+}
+.movies-poster:hover ~ .popover{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    display: inline-block;
+    transition: all .2s;
+
+}
+
+@media screen and (width<=575px) {
+    .movies{
+       width: 70%;
+    }
+}
